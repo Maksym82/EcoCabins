@@ -4,6 +4,24 @@
 
 body {
   font-family: "Rubik", sans-serif;
+  font-size: 0.875rem;
+  color: #646d70;
+  display: flex;
 }
 
+[class*='__container'] {
+    max-width: 52.5rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    margin: 0 auto;
+}
+.title {
+    font-family: 'Merriweather';
+    color: #fff;
+    font-size: 1.875rem;
+}
+.title--dark {
+    color: #222f33;
+}
 
+/* Основные стили */
