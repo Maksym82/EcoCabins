@@ -1,1 +1,10 @@
-@import url('null.css');
+@import url("null.css");
+
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.title {
+  /* font-family: "Merriweather", sans-serif; */
+}
