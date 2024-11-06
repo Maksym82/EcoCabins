@@ -19,7 +19,6 @@ html,
 body {
   min-width: 320px;
   height: 100%;
-  line-height: 1;
 }
 
 html {
@@ -31,7 +30,7 @@ a {
   text-decoration: none;
 }
 
-li {
+ul li {
   list-style: none;
 }
 
