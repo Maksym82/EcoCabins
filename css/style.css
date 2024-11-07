@@ -6,7 +6,15 @@ body {
   font-family: "Rubik", sans-serif;
   font-size: 0.875rem;
   color: #646d70;
-  display: flex;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+}
+.page {
+    flex: 1 1 auto;
 }
 
 [class*='__container'] {
