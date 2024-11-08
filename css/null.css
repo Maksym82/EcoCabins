@@ -19,6 +19,7 @@ html,
 body {
   min-width: 320px;
   height: 100%;
+  line-height: 1;
 }
 
 html {
@@ -36,6 +37,11 @@ ul li {
 
 button {
   cursor: pointer;
+  color: inherit;
+  background-color: transparent;
+  line-height: inherit;
+  font-weight: inherit;
+  font-size: inherit;
 }
 
 img {
