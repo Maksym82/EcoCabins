@@ -7,7 +7,10 @@
     <!--Favicon-->
     <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
     <!--Swiper-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!--Styles-->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -78,12 +81,24 @@
               </div>
               <a href="#" class="materials__more">Lees meer</a>
             </div>
-            <div class="materials__slider"></div>
+            <!--Swiper-->
+            <div class="materials__slider slider-materials swiper">
+              <!-- Additional required wrapper -->
+              <div class="slider-materials__wrapper swiper-wrapper">
+                <!-- Slides -->
+                <div class="slider-materials__slide swiper-slide">
+                  
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
         </section>
       </main>
       <footer class="footer"></footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
