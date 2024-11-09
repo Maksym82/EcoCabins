@@ -17,6 +17,8 @@ body {
 }
 .page__main {
 }
+.page__materials {
+}
 
 [class*="__container"] {
   max-width: 52.5rem;
@@ -196,3 +198,48 @@ body {
     opacity: 0.8;
   }
 }
+
+/* Materials */
+.swiper {
+  overflow: hidden;
+}
+.swiper-initialized {
+  touch-action: pan-y;
+}
+.swiper-wrapper {
+  display: flex;
+  box-sizing: content-box;
+}
+.swiper-slide {
+  flex-shrink: 0;
+}
+
+.materials {
+}
+.materials__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+.materials__content {
+}
+.materials__title {
+}
+.materials__text {
+}
+.materials__more {
+}
+.materials__slider {
+  min-width: 0;
+}
+.slider-materials {
+}
+.slider-materials__wrapper {
+}
+.slider-materials__slide {
+}
+.slider-materials__pagination {
+}
+
+
+
