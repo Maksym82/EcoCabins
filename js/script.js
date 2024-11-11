@@ -1,4 +1,4 @@
-const swiper = new Swiper(".materials__slider", {
+const swiper = new Swiper(".slider-materials", {
   // Optional parameters
   loop: true,
   grabCursor: true,

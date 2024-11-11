@@ -207,6 +207,8 @@ body {
   touch-action: pan-y;
 }
 .swiper-wrapper {
+  width: 100%;
+	height: 100%;
   display: flex;
   box-sizing: content-box;
 }
@@ -215,6 +217,8 @@ body {
 }
 
 .materials {
+  position: relative;
+	z-index: 2;
 }
 .materials__container {
   display: grid;
@@ -230,16 +234,48 @@ body {
 .materials__more {
 }
 .materials__slider {
-  min-width: 0;
 }
 .slider-materials {
+  position: relative;
+  max-width: 20.3125rem;
 }
 .slider-materials__wrapper {
 }
 .slider-materials__slide {
+  position: relative;
+  aspect-ratio: 325 / 366;
+}
+.slider-materials__slide img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
 }
 .slider-materials__pagination {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 0.3125rem 1rem 0.3125rem;
+  gap: 0.5rem;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
+.slider-materials__pagination .swiper-pagination-bullet {
+  flex: 0 0 0.5rem;
+  height: 0.5rem;
+  background-color: #fff;
+  opacity: 0.4;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
 
-
+.slider-materials__pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+}
