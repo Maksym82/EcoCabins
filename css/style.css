@@ -45,6 +45,9 @@ body {
 .text {
   line-height: 185%;
 }
+.text p:not(:last-child) {
+  margin-bottom: 0.9375rem;
+}
 
 /* Основные стили */
 /* Header */
@@ -261,7 +264,7 @@ body {
   border: 1px solid #646d70;
 }
 .materials__slider {
-  transform: translate(0, -22.655738%); 
+  transform: translate(0, -22.655738%);
 }
 .slider-materials {
   position: relative;
@@ -309,7 +312,7 @@ body {
 
 @media (min-width: 47.99em) {
   .materials::before {
-    content: '';
+    content: "";
     position: absolute;
     background-color: #fff;
     top: 0;
@@ -319,12 +322,12 @@ body {
     transform: translate(0px, -100%);
   }
   .materials::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     right: 0;
     height: 8.75rem;
-    background-color:  #222f33;
+    background-color: #222f33;
     width: 38.3%; /* 383/1000 */
   }
 }
@@ -334,6 +337,32 @@ body {
     grid-template-columns: auto;
   }
   .materials__slider {
-    transform: translate(0, 0); 
+    transform: translate(0, 0);
+  }
+}
+
+/* Inovate */
+.inovate {
+  background-color: #222f33;
+  padding: 72px 0 80px 0;
+}
+.inovate__container {
+}
+.inovate__title {
+}
+.inovate__title:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.inovate__text {
+  columns: 2 15.625rem;
+  gap: 2.6875rem;
+  color: #fff;
+  opacity: 0.7;
+}
+
+@media (max-width: 47.99em) {
+  .inovate {
+    padding: 1.875rem 0;
   }
 }
