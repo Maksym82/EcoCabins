@@ -58,8 +58,24 @@ body {
   left: 0;
   z-index: 50;
 }
+.header::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(34, 47, 51, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.header.scroll::before {
+  opacity: 1;
+}
 .header__container {
   display: flex;
+  position: relative;
+  z-index: 2;
   gap: 1.25rem;
   align-items: center;
   justify-content: space-between;
@@ -437,9 +453,18 @@ body {
 }
 .footer__container {
   display: grid;
+  column-gap: 0.9375rem;
+  row-gap: 1.25rem;
   color: #fff;
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 37.5em) {
+  .footer__container {
+    grid-template-columns: auto;
+    justify-content: center;
+    text-align: center;
+  }
 }
 .footer__mail {
   font-weight: 500;
