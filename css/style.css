@@ -393,7 +393,7 @@ body {
 .info__item {
 }
 .info__title {
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 1.125rem;
   color: #222f33;
 }
@@ -430,3 +430,43 @@ body {
 }
 
 /* Footer */
+.footer {
+  background-color: #222f33;
+  padding-top: 2.0625rem;
+  padding-bottom: 2.0625rem;
+}
+.footer__container {
+  display: grid;
+  color: #fff;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+.footer__mail {
+  font-weight: 500;
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+.footer__mail:hover {
+  text-decoration: underline;
+}
+.footer__logo {
+  justify-self: center;
+}
+.footer__menu {
+}
+.menu-footer {
+  display: flex;
+  justify-self: end;
+  gap: 1.875rem;
+  align-items: center;
+  opacity: 0.6;
+}
+.menu-footer__item {
+}
+.menu-footer__link {
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+.menu-footer__link:hover {
+  text-decoration: underline;
+}
