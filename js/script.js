@@ -1,3 +1,5 @@
+"use strict";
+
 const swiper = new Swiper(".slider-materials", {
   // Optional parameters
   loop: true,
@@ -14,3 +16,18 @@ window.addEventListener("scroll", function () {
     ? document.querySelector(".header").classList.add("scroll")
     : document.querySelector(".header").classList.remove("scroll");
 });
+
+
+
+
+document.addEventListener("click", documentClick);
+
+function documentClick(e) {
+  const targetItem = e.target;
+  console.log(targetItem);
+  if (targetItem.closest(".icon-menu")) {
+    document.documentElement.classList.toggle("menu-open");
+  } else if (targetItem.closest(".menu__link")) {
+    document.documentElement.classList.toggle("menu-open");
+  }
+}
