@@ -19,6 +19,7 @@ window.addEventListener("scroll", function () {
 
 
 
+// Burger menu
 
 document.addEventListener("click", documentClick);
 
