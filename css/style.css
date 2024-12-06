@@ -195,27 +195,30 @@ body {
   }
 }
 
-.menu__body {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  left: -100%;
-  top: 0;
-  padding: 100px 15px 30px 15px;
-  overflow: auto;
-  transition: left 0.3s linear;
+@media (max-width: 655px) {
+  .menu__body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #211d1d;
+    left: -100%;
+    top: 0;
+    padding: 100px 15px 30px 15px;
+    overflow: auto;
+    transition: left 0.3s linear;
+  }
+  .menu__body::before {
+    content: "";
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: #211d1d;
+    z-index: 2;
+  }
 }
-.menu__body::before {
-  content: "";
-  width: 100%;
-  height: 70px;
-  position: fixed;
-  top: 0;
-  left: -100%;
-  background-color: #000;
-  z-index: 2;
-}
+
 
 .menu-open .menu__body,
 .menu-open .menu__body::before {
