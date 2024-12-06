@@ -17,8 +17,6 @@ window.addEventListener("scroll", function () {
     : document.querySelector(".header").classList.remove("scroll");
 });
 
-
-
 // Burger menu
 
 document.addEventListener("click", documentClick);
@@ -32,3 +30,20 @@ function documentClick(e) {
     document.documentElement.classList.toggle("menu-open");
   }
 }
+
+//Modal window
+
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector("[data-modal-open]"),
+    closeModalBtn: document.querySelector("[data-modal-close]"),
+    modal: document.querySelector("[data-modal]"),
+  };
+
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle("backdrop--hidden");
+  }
+})();
