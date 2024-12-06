@@ -55,7 +55,7 @@
                 duurzame natuurlijke materialen
               </h1>
             </div>
-            <a href="#" class="main-section__video-link">Bekijk de film</a>
+            <button href="#" class="main-section__video-link" data-modal-open>Bekijk de film</button>
           </div>
           <div class="main-section__image">
             <img src="./img/main/bg.jpg" alt="Image" />
@@ -223,6 +223,30 @@
           </ul>
         </div>
       </footer>
+      <!--Modal-->
+      <div class="backdrop backdrop--hidden" data-modal>
+        <div class="modal">
+          <button
+            class="close"
+            aria-label="Кнопка закриття модального вікна"
+            data-modal-close
+          >
+            <svg class="close__icon">
+              <use href="./img/icons.svg#icon-burger-close"></use>
+            </svg>
+          </button>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/JueppeaIHVU?si=oumJQeUi4_D5W7B5"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
