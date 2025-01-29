@@ -666,8 +666,33 @@ body {
   display: none;
   cursor: pointer;
   opacity: 0.6;
+  z-index: 5;
+}
+
+@media (min-width: 600px) {
+  #scrollToTop {
+    bottom: 50px;
+    left: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  #scrollToTop {
+    left: 85%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #scrollToTop {
+    left: 78%;
+  }
+}
+@media (min-width: 1200px) {
+  #scrollToTop {
+    left: 73%;
+  }
 }
 
 .scroll-up {
-  fill: #222f33;
+  fill: #161d1f;
 }
