@@ -657,3 +657,17 @@ body {
     width: 530px;
   }
 }
+
+/* Scroll up */
+#scrollToTop {
+  position: fixed;
+  bottom: 35px;
+  left: 75%;
+  display: none;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.scroll-up {
+  fill: #222f33;
+}
